@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pendaftaran | Dinas Koperasi dan UMKM Kota Semarang</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +37,7 @@
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="registration.html">PENDAFTARAN</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="contact.html">KONTAK</a></li>
         </ul>
       </div>
       <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -49,79 +49,62 @@
     <div class="card mb-5">
       <form>
 
-        <!-- Form data diri -->
-        <!-- <div class="card-header" >
-          <h4 class="mb-0">Data Diri</h4>
-        </div> -->
-        <h4 class="mx-5 mt-5 text-center">Data Diri</h4>
+        <!-- Form Data Diri -->
+        <h4 class="mx-5 mt-5">Data Diri</h4>
   
         <div class="card-body px-5">
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Nama</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Nama</label>
+              <input type="text" class="form-control" placeholder="Nama Lengkap"/>
             </div>
 
-            <div class="col-md-6">
-              <div class="mb-1">
-                <label class="form-label">No Hp</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">No Hp</label>
+              <input type="text" class="form-control" placeholder="0812-3456-7890"/>
             </div>
           </div>
   
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Email</label>
-                <input type="emails" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Email</label>
+              <input type="emails" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Sosial Media</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Sosial Media</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
           </div>
   
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Kelurahan</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Kelurahan</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
             
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Kecamatan</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Kecamatan</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
           </div>
   
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Alamat</label>
-                <textarea type="text" class="form-control" rows="6"></textarea>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Alamat</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
             </div>
   
-            <div class="col-md-6">
+            <div class="col-md-6 mb-4">
               <div class="form-group">
                 <label for="pendidikan" class="form-label">Pendidikan Terakhir</label>
                 <select id="pendidikan" class="form-select">
                   <option>-</option>
                   <option>S1</option>
-                  <option>D3</option>
-                  <option>PGA</option>
+                  <option>Diploma</option>
                   <option>SLTP</option>
                   <option>SLTA</option>
+                  <option>SD</option>
                 </select>
               </div>
             </div>
@@ -132,172 +115,142 @@
         <hr class="my-5 mx-5" />
 
         <!-- Form data usaha -->
-        <!-- <div class="card-header">
-          <h4 class="mb-0">Data Usaha</h4>
-        </div> -->
-        <h4 class="mx-5 text-center">Data Usaha</h4>
+        <h4 class="mx-5">Data Usaha</h4>
 
         <div class="card-body px-5">
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Nama Usaha</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Nama Usaha</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Bidang Usaha</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Bidang Usaha</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
           </div>
 
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Jenis Produk</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Jenis Produk</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">NIB/OSS</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">NIB/OSS</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label rounded-0">No. Pendaftaran UMKM</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label rounded-0">No. Pendaftaran UMKM</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
           </div>
 
           <div class="row gx-xl-5">
-            <div class="col-md-3">
-              <div class="mb-4">
-                <label class="form-label">Aset (2020)</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Aset (2020)</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-3">
-              <div class="mb-4">
-                <label class="form-label">Aset (2021)</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Aset (2021)</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-3">
-              <div class="mb-4">
-                <label class="form-label">Omset (2020)</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Omset (2020)</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-3">
-              <div class="mb-4">
-                <label class="form-label">Omset (2020)</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Omset (2020)</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
           </div>
 
           <div class="row gx-xl-5">
-            <div class="col-md-3">
-              <div class="mb-4">
-                <label class="form-label">Kapasitas Produk (2020)</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Kapasitas Produk (2020)</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-3">
-              <div class="mb-4">
-                <label class="form-label">Kapasitas Produk (2021)</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Kapasitas Produk (2021)</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-3">
-              <div class="mb-4">
-                <label class="form-label">Tenaga Kerja (2020)</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Tenaga Kerja (2020)</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
 
-            <div class="col-md-3">
-              <div class="mb-4">
-                <label class="form-label">Tenaga Kerja (2020)</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Tenaga Kerja (2020)</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
           </div>
           
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Izin Usaha</label>
-                <input type="text" class="form-control" placeholder=""/>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Izin Usaha</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Pemodalan Usaha</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <div class="form-group">
+                <label for="pendidikan" class="form-label">Cakupan Wilayah Pemasaran</label>
+                <select id="pendidikan" class="form-select">
+                  <option>-</option>
+                  <option>Dalam Kota</option>
+                  <option>Nasional</option>
+                  <option>Dalam Kota & Nasional</option>
+                </select>
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Pemodalan Usaha</label>
-                <input type="text" class="form-control" placeholder=""/>
+            <div class="col-md-6 mb-4">
+              <div class="form-group">
+                <label for="pendidikan" class="form-label">Jenis Pemasaran</label>
+                <select id="pendidikan" class="form-select">
+                  <option>-</option>
+                  <option>Penjualan Langsung</option>
+                  <option>Online</option>
+                  <option>Konsinyasi</option>
+                  <option>Penjualan Langsung & Online</option>
+                </select>
               </div>
             </div>
           </div>
 
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Cakupan Wilayah Pemasaran</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Jenis Pemasaran</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
-            </div>
-          </div>
-
-          <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Kelurahan</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Kelurahan</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
             
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Kecamatan</label>
-                <input type="text" class="form-control" placeholder=""/>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Kecamatan</label>
+              <input type="text" class="form-control" placeholder=""/>
             </div>
           </div>
 
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Alamat Tempat Usaha</label>
-                <textarea type="text" class="form-control" rows="6"></textarea>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Alamat Tempat Usaha</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
             </div>
 
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Permasalahan yang dihadapi</label>
-                <textarea type="text" class="form-control" rows="6"></textarea>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Permasalahan yang dihadapi</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
             </div>
 
           </div>
@@ -306,34 +259,27 @@
         <hr class="my-5 mx-5" />
 
         <!-- Data Pelatihan -->
-        <!-- <div class="card-header">
-          <h4 class="mb-0">Data Pelatihan</h4>
-        </div> -->
-        <h4 class="mx-5 text-center">Data Pelatihan</h4>
+        <h4 class="mx-5">Data Pelatihan</h4>
   
         <div class="card-body px-5">
           <div class="row gx-xl-5">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Pelatihan yang Pernah diikuti</label>
-                <textarea type="text" class="form-control" rows="6"></textarea>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Pelatihan yang Pernah diikuti</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
             </div>
   
-            <div class="col-md-6">
-              <div class="mb-4">
-                <label class="form-label">Usulan Pelatihan</label>
-                <textarea type="text" class="form-control" rows="6"></textarea>
-              </div>
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Usulan Pelatihan</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
             </div>
           </div>
         </div>
   
+        
         <div class="card-footer text-end py-4 px-5 bg-light border-0">
           <button class="btn btn-danger">Reset</button>
           <button class="btn btn-success" type="submit">Submit</button>
         </div>
-
       </form>
     </div>
   </div>
@@ -341,16 +287,16 @@
     <!-- Footer -->
     <footer>
       <div class="social">
-        <a href="#"><i class="fa fa-whatsapp"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-youtube-play"></i></a> 
+        <a href="https://api.whatsapp.com/send/?phone=6282133933328&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/dinkopusahamikro_kotasemarang/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100009213753323&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+        <a href="https://youtube.com/@kopumkmsmg"><i class="fa fa-youtube-play"></i></a> 
       </div>
 
       <div class="links">
         <a href="index.html">Home</a>
         <a href="registration.html">Pendaftaran</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">Kontak</a>
       </div>
 
       <div class="credit">

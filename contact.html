@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | Dinas Koperasi dan UMKM Kota Semarang</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Sub Header -->
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="registration.html">Pendaftaran</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Hubungi Kami</h1>
+  </section>   <!-- End Sub Header -->
+
+  <!-- Section Location -->
+  <section class="location">
+    <div class="gap-section">
+      <div class="section-title">lokasi</div>
+      <div class="line-title"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.891136803526!2d110.4097441!3d-6.9830154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4ee6be306b%3A0xfd899c515a701d2d!2sDinas%20Koperasi%20dan%20UMKM%20Kota%20Semarang!5e0!3m2!1sen!2sid!4v1683901807596!5m2!1sen!2sid" 
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+  </section> <!-- End Section Location -->
+
+  <!-- Contact Form -->
+  <section class="contact-us">
+    <div class="gap-section">
+      <div class="section-title">kontak</div>
+      <div class="line-title"></div>
+      <div class="row-item">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <span>
+              <h5>Alamat</h5>
+              <p>Jl. Pemuda 175 Gedung Pandanaran Lt. 7, Semarang</p>
+            </span>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>Telepon</h5>
+              <p>024358486</p>
+            </span>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>Email</h5>
+              <p>kopumkmsmg@gmail.com</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="https://formsubmit.co/kopumkmsmg@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Nama" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="subject" placeholder="Subjek" required />
+            <textarea rows="6" name="message" placeholder="Pesan" required></textarea>
+            <button type="submit" class="primary-btn red-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> <!-- Contact Form -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-media">
+      <a target="_blank" href="https://api.whatsapp.com/send/?phone=6282133933328&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a>
+      <a target="_blank" href="https://www.instagram.com/dinkopusahamikro_kotasemarang/"><i class="fa fa-instagram"></i></a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100009213753323&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+      <a target="_blank" href="https://youtube.com/@kopumkmsmg"><i class="fa fa-youtube-play"></i></a> 
+    </div>
+
+    <div class="links">
+      <a href="index.html">Beranda</a>
+      <a href="registration.html">Pendaftaran</a>
+      <a href="contact.html">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p><i class="fa fa-copyright"></i>2023 | <span>Dinas Koperasi dan Usaha Mikro Kota Semarang.</span></p>
+    </div>
+  </footer> <!-- End Footer -->
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

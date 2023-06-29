@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendaftaran | Dinas Koperasi dan UMKM Kota Semarang</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-regis"> 
+  <!-- Sub Header -->
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="registration.html">Pendaftaran</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Daftarkan Usaha Anda</h1>
+  </section> <!-- End Sub Header -->
+  
+  <!-- Form Container -->
+  <div class="container my-5">
+    <form class="card">
+      <!-- Form Data Diri -->
+      <section>
+      <div class="section-title mt-5">Data Diri</div>
+        <div class="line-title"></div>
+          <div class="card-body">
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Nama:</label>
+              <input type="text" class="form-control"  placeholder="" required />
+            </div>
+  
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Nomer Telepon:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Email:</label>
+              <input type="emails" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Sosial Media:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Kelurahan:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Kecamatan:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Alamat:</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="pendidikan" class="form-label">Pendidikan Terakhir:</label>
+                <select id="pendidikan" class="form-select">
+                  <option></option>
+                  <option>S1</option>
+                  <option>Diploma</option>
+                  <option>SLTA</option>
+                  <option>SLTP</option>
+                  <option>SD</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  <!-- End Form Data Diri -->
+      
+      <div class="line"></div>
+
+      <!-- Form Data Usaha -->
+      <section>
+        <div class="section-title">Data Usaha</div>
+        <div class="line-title"></div>
+        <div class="card-body">
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Nama Usaha:</label>
+              <input type="text" class="form-control" placeholder="" required/>
+            </div>
+  
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Bidang Usaha:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Jenis Produk:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-6 mb-4">
+              <label class="form-label">NIB/OSS:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-6 mb-4">
+              <label class="form-label rounded-0">Nomer Pendaftaran UMKM:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Aset (2020):</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Aset (2021):</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Omset (2020):</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Omset (2020):</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Kapasitas Produk (2020):</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Kapasitas Produk (2021):</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Tenaga Kerja (2020):</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-3 mb-4">
+              <label class="form-label">Tenaga Kerja (2020):</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+          
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Izin Usaha:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+  
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Pemodalan Usaha:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <div class="form-group">
+                <label for="pendidikan" class="form-label">Cakupan Wilayah Pemasaran:</label>
+                <select id="pendidikan" class="form-select">
+                  <option></option>
+                  <option>Dalam Kota</option>
+                  <option>Nasional</option>
+                  <option>Internasional</option>
+                </select>
+              </div>
+            </div>
+  
+            <div class="col-md-6 mb-4">
+              <div class="form-group">
+                <label for="pendidikan" class="form-label">Jenis Pemasaran:</label>
+                <select id="pendidikan" class="form-select">
+                  <option></option>
+                  <option>Penjualan Langsung</option>
+                  <option>Online</option>
+                  <option>Konsinyasi</option>
+                  <option>Penjualan Langsung & Online</option>
+                </select>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Kelurahan:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Kecamatan:</label>
+              <input type="text" class="form-control" placeholder=""/>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Alamat Tempat Usaha:</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
+            </div>
+  
+            <div class="col-md-6">
+              <label class="form-label">Permasalahan yang dihadapi:</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
+            </div>
+          </div>
+        </div>
+      </section>  <!-- End Form Data Usaha -->
+      
+      <div class="line"></div>
+
+      <!-- Form Data Pelatihan -->
+      <section>
+        <div class="section-title">Data Pelatihan</div>
+        <div class="line-title"></div>
+        <div class="card-body">
+          <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4">
+              <label class="form-label">Pelatihan yang Pernah diikuti:</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
+            </div>
+  
+            <div class="col-md-6">
+              <label class="form-label">Usulan Pelatihan:</label>
+              <textarea type="text" class="form-control" rows="6"></textarea>
+            </div>
+          </div>
+        </div>
+      </section>  <!-- End Form Data -->
+
+      <!-- Button Submit Reset -->
+      <div class="d-flex justify-content-between gap-4 py-4 px-5 mb-3">
+        <button type="reset" class="primary-btn red-btn w-100">Reset</button>
+        <button type="submit" class="btn blue-btn w-100">Submit</button>
+      </div> <!-- End Button Submit Reset -->
+    </form>
+  </div> <!-- End Form Container -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="social-media">
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=6282133933328&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a>
+        <a target="_blank" href="https://www.instagram.com/dinkopusahamikro_kotasemarang/"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100009213753323&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" href="https://youtube.com/@kopumkmsmg"><i class="fa fa-youtube-play"></i></a> 
+      </div>
+
+      <div class="links">
+        <a href="index.html">Beranda</a>
+        <a href="registration.html">Pendaftaran</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p><i class="fa fa-copyright"></i> 2023 | <span>Dinas Koperasi dan Usaha Mikro Kota Semarang.</span></p>
+      </div>
+    </footer> <!-- End Footer -->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
